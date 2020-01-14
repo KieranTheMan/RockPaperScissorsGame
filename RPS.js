@@ -8,6 +8,11 @@ let rock = document.getElementById('r');
 let paper = document.getElementById('p');
 let scissors = document.getElementById('s');
 
+function getCompChoice() {
+    let choices = ['r', 'p', 's'];
+    let randomNums = Math.floor(Math.random() * 3);
+    return choices[randomNums];
+}
 
 function game(userChoice) {
     
