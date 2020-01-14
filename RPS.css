@@ -71,6 +71,12 @@ header {
     margin: 0 20px;
     padding: 25px;
     display: inline-block;
+    transition: all 0.3s;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background:blueviolet;
 }
 
 #action-message {
