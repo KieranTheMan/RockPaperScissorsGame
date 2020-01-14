@@ -17,4 +17,13 @@ header {
      text-align: center;
      font-family: Asap, sans-serif;
 }
-
+.score-board {
+    margin: 20px auto;
+    border: 3px solid white;
+    border-radius: 4px;
+    width:280px;
+    color:white;
+    font-size: 46px;
+    padding: 15px 20px;
+    font-family: Asap, sans-serif;
+}
