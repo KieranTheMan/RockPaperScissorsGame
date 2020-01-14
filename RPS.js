@@ -15,7 +15,25 @@ function getCompChoice() {
 }
 
 function game(userChoice) {
-    
+    let compChoice = getCompChoice();
+    switch(userChoice + compChoice) {
+        case 'rs':
+        case 'sp':
+        case 'pr':
+            console.log('User Wins')
+            break;
+        case 'sr':
+        case 'ps':
+        case 'rp':
+            console.log('User Loses')
+            break;
+        case 'rr':
+        case 'ss':
+        case 'pp':
+            console.log('Its A Draw!')
+            break;
+
+    }
 }
 
 rock.addEventListener('click', function() {
