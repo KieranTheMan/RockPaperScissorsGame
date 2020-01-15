@@ -14,11 +14,18 @@ function getCompChoice() {
     return choices[randomNums];
 }
 
+function convertToWord(letter) {
+    return letter === 'r' ? 'Rock' :
+        letter === 'p' ? 
+            'Paper' : 
+            'Scissors';
+}
+
 function win(userChoice, compChoice) {
     userScore++
     userScore_span.innerHTML = userScore
     compScore.innerHTML = compScore;
-    result.innerHTML = `${userChoice} beats ${compChoice} You Win!`; 
+    result.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(compChoice)} You Win!`; 
     console.log('win')
     console.log(userScore)
 }
