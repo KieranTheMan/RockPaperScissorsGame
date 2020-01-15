@@ -23,28 +23,31 @@ function convertToWord(letter) {
 }
 
 function win(userChoice, compChoice) {
+    let userChoice_dev = document.getElementById(userChoice);
     userScore++;
     userScore_span.innerHTML = userScore;
     compScore.innerHTML = compScore;
     result.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(compChoice)} You Win!`;
-    choice().classList.add('green-glow');
+    userChoice_dev.classList.add('green-glow');
     setTimeout(() => userChoice_dev.classList.remove('green-glow'), 500);
 }
 
 function lose(userChoice, compChoice) {
+    let userChoice_dev = document.getElementById(userChoice);
     compScore++;
     compScore_span.innerHTML = compScore;
     compScore.innerHTML = compScore;
     result.innerHTML = `${convertToWord(compChoice)} beats ${convertToWord(userChoice)} You Lose!`;
-    choice().classList.add('red-glow');
+    userChoice_dev.classList.add('red-glow');
     setTimeout(()=>userChoice_dev.classList.remove('red-glow'), 500);
 }
 
 function draw(userChoice) {
+    let userChoice_dev = document.getElementById(userChoice);
     userScore_span.innerHTML = userScore;
     compScore.innerHTML = compScore;
     result.innerHTML = 'DRAW!';
-    choice().classList.add('gray-glow');
+    userChoice_dev.classList.add('gray-glow');
     setTimeout(()=>userChoice_dev.classList.remove('gray-glow'), 500);
 }
 
@@ -79,8 +82,4 @@ function clickEvents() {
     rock.addEventListener('click', () => game('r'));
     paper.addEventListener('click', () => game('p'));
     scissors.addEventListener('click', () =>game('s'));
-}
-
-function choice() {
-    userChoice_dev = document.getElementById(userChoice);
 }
