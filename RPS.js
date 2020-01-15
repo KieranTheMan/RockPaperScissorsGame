@@ -14,8 +14,13 @@ function getCompChoice() {
     return choices[randomNums];
 }
 
-function win() {
-    console.log('User Wins')
+function win(userChoice, compChoice) {
+    userScore++
+    userScore_span.innerHTML = userScore
+    compScore.innerHTML = compScore;
+    result.innerHTML = `${userChoice} beats ${compChoice} You Win!`; 
+    console.log('win')
+    console.log(userScore)
 }
 
 function lose() {
@@ -34,19 +39,18 @@ function game(userChoice) {
         case 'rs':
         case 'sp':
         case 'pr':
-            win();
+            win(userChoice, compChoice);
             break;
         case 'sr':
         case 'ps':
         case 'rp':
-            lose();
+            lose(userChoice, compChoice);
             break;
         case 'rr':
         case 'ss':
         case 'pp':
-            draw();
+            draw(userChoice, compChoice);
             break;
-
     }
 }
 
