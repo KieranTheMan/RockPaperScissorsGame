@@ -24,7 +24,7 @@ function win(userChoice, compChoice) {
 }
 
 function lose() {
-    console.log('User Lose')
+    console.log('UserLose')
 }
 
 function draw() {
