@@ -14,23 +14,37 @@ function getCompChoice() {
     return choices[randomNums];
 }
 
+function win() {
+    console.log('User Wins')
+}
+
+function lose() {
+    console.log('User Lose')
+}
+
+function draw() {
+    console.log('Draw')
+}
+
+
+
 function game(userChoice) {
     let compChoice = getCompChoice();
     switch(userChoice + compChoice) {
         case 'rs':
         case 'sp':
         case 'pr':
-            console.log('User Wins')
+            win();
             break;
         case 'sr':
         case 'ps':
         case 'rp':
-            console.log('User Loses')
+            lose();
             break;
         case 'rr':
         case 'ss':
         case 'pp':
-            console.log('Its A Draw!')
+            draw();
             break;
 
     }
