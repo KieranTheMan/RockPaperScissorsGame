@@ -22,20 +22,23 @@ function convertToWord(letter) {
 }
 
 function win(userChoice, compChoice) {
-    userScore++
-    userScore_span.innerHTML = userScore
+    userScore++;
+    userScore_span.innerHTML = userScore;
     compScore.innerHTML = compScore;
-    result.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(compChoice)} You Win!`; 
-    console.log('win')
-    console.log(userScore)
+    result.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(compChoice)} You Win!`;
 }
 
-function lose() {
-    console.log('UserLose')
+function lose(userChoice, compChoice) {
+    compScore++;
+    compScore_span.innerHTML = compScore;
+    compScore.innerHTML = compScore;
+    result.innerHTML = `${convertToWord(compChoice)} beats ${convertToWord(userChoice)} You Lose!`;
 }
 
-function draw() {
-    console.log('Draw')
+function draw(userChoice, compChoice) {
+    userScore_span.innerHTML = userScore;
+    compScore.innerHTML = compScore;
+    result.innerHTML = 'DRAW!';
 }
 
 
