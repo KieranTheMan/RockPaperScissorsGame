@@ -1,14 +1,14 @@
 # RockPaperScissorsGame
-
+https://kierantheman.github.io/RockPaperScissorsGame/.
 ## Task
-To build a classic Rock, Paper, Scissors game using HTML5, CSS3 and vanilla JavaScript ES6+.
+To build a classic Rock, Paper, Scissors game using <b>HTML5</b>, <b>CSS3</b> and vanilla <b>JavaScript ES6+</b>.
 
 ## Summary
-I chose to develop a classic Rock, Paper, Scissors game, to improve my knowledge of JavaScript also understanding of Higher order functions and Dom manipulation. The main focus was to exercise and advance my current knowledge on JavaScript.
+I chose to develop a classic Rock, Paper, Scissors game, to improve my knowledge of JavaScript also understanding of Higher order functions and Dom manipulation. The main focus was to exercise and advance my current knowledge on <b>JavaScript</b>.
 
 ## Functionality
 <ul>
-    <li>The aim of the game is to select the opposing CPU choice to win wethers thats Rock, Paper or Scissors. Once the user has selected a choice, the display header shows a winning, losing or draw message.  Also the circles surrounding the Rock, Paper,  Scissors images glow green for winning, red for losing and grey when its a draw.</li>
+    <li>The aim of the game is to select the opposing CPU choice to win by selecting Rock, Paper or Scissors. Once the user has selected a choice, the display header shows a winning, losing or draw message.  Also the circles surrounding the Rock, Paper, Scissors images glow green for winning, red for losing and grey when its a draw.</li>
 
    <li>Each time the user or CPU wins an algorithm is triggered to calculate how many times won and this is shown on the score display.</li>
 
